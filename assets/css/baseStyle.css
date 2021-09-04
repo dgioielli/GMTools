@@ -1,0 +1,68 @@
+/* Palheta de Base:
+#0D0C12
+#ED3F5C
+#03D1AF
+#1D1D8B
+#F1F1F1
+*/
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-color: #0D0C12;
+    padding: 5px;
+}
+
+header h1{
+    font-size: xx-large;
+    color: #F1F1F1;
+    text-align: center;
+    padding: 0.5em 0;
+}
+
+nav ul{
+    text-align: center;
+    margin: 20px;
+}
+
+nav li{
+    display: inline;
+    margin: 20px 20px;
+}
+
+nav a{
+    color: #F1F1F1;
+    font-weight: bold;
+    font-size: x-large;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #03D1AF;
+    text-decoration: underline;
+}
+
+nav a:focus{
+    color: #03D1AF;
+    text-decoration: underline;
+}
+
+main{
+    flex: 1;
+}
+
+footer{
+    background-color: #0D0C12;
+    text-align: center;
+}
+
+footer .text-footer{
+    display: inline-block;
+    color: #F1F1F1;
+    vertical-align: bottom;
+    font-size: large;
+    padding: 1.5em;
+}

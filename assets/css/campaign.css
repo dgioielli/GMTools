@@ -1,0 +1,62 @@
+/* Palheta de Base:
+#0D0C12
+#ED3F5C
+#03D1AF
+#1D1D8B
+#F1F1F1
+*/
+
+main{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.campaign-menu{
+    flex: 0 0 300px;
+    min-height: 200px;
+    background: #f1f1f1;
+}
+
+.campaign-menu-title{
+    text-align: center;
+    margin: 0.5em;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.setting-menu-item{
+    margin: 0 1em;
+    font-size: large;
+    font-weight: bold;
+    padding: 0.4em 0;
+}
+
+.expanded::before{
+    content: "\1F836 ";
+    padding: 0 10px 0 0;
+}
+
+.collapsed::before{
+    content: "\1F837 ";
+    padding: 0 10px 0 0;
+}
+
+.campaign-menu-item{
+    margin: 0 1em 0 1.4em;
+    font-size: large;
+    font-weight: 400;
+    padding: 0.4em 0;
+    transition: 0.5s;
+}
+
+.hidden-menu-item{
+    /* display: none; */
+    font-size: 0em;
+    transition: 0.5s;
+}
+
+.campaign-fill{
+    flex: 1;
+    min-height: 200px;
+}

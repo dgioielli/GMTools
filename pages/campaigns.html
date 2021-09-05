@@ -29,21 +29,32 @@
     </header>
     <main>
         <div class="campaign-menu">
+            <button class="campaign-menu-button" data-new-campaign-button>Nova Campanha</button>
             <ul data-campaign-menu>
-                <li class="campaign-menu-title">Campanhas:</li>
+                <!-- <li class="campaign-menu-title">Campanhas:</li>
                 <li class="setting-menu-item">Cenário 1</li>
                 <li class="campaign-menu-item">Campanha 1</li>
-                <li class="campaign-menu-item">Campanha 2 com um nome muito longo para ver o que acontece!!!!!!</li>
-            </ul>
-            <ul>
-                <li class="campaign-menu-title">Campanhas:</li>
-                <li class="setting-menu-item">Cenário 1</li>
-                <li class="campaign-menu-item">Campanha 1</li>
-                <li class="campaign-menu-item">Campanha 2 com um nome muito longo para ver o que acontece!!!!!!</li>
+                <li class="campaign-menu-item">Campanha 2 com um nome muito longo para ver o que acontece!!!!!!</li> -->
             </ul>
         </div>
         <div class="campaign-fill">
-
+            <div class="popup-new-campaign hidden-popup" data-popup-new-campaign></div>
+            <div class="hidden-page" data-campaign-page>
+                <div class="campaign-header" data-campaign-header>
+                    <input type="text" class="campaign-title" data-campaign-title>
+                    <input type="text" class="campaign-setting-title" data-campaign-setting-title>
+                </div>
+                <div class="campaign-navagation" data-campaign-navigation>
+                    <ul class="campaign-navigation-list">
+                        <li class="campaign-navigation-item"><button>Todas as Cartas</button></li>
+                        <li class="campaign-navigation-item"><button>Cartas de Aventuras</button></li>
+                        <li class="campaign-navigation-item"><button>Cartas de Lugares</button></li>
+                        <li class="campaign-navigation-item"><button>Cartas de Personagens</button></li>
+                        <li class="campaign-navigation-item"><button>Cartas de Eventos</button></li>
+                        <li class="campaign-navigation-item"><button>Outras Cartas</button></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </main>
     <footer>

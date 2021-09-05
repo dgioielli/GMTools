@@ -1,4 +1,7 @@
-import { atualizeCampaignMenuItens } from "../services/campaignServices.js";
+import { eventKeys } from "../keys/eventKeys.js";
+import { dataKeys } from "../keys/htmlKeys.js";
+import { atualizeCampaignMenuItens, getActiveCampaign } from "../services/campaignServices.js";
+import { setActiceCampaign } from "../services/routerServices.js";
 import { isSettingCollapsed, setCollapsedSetting } from "../services/settingsServices.js";
 
 export const loadCampaignMenu = (campaigns) => {
@@ -23,7 +26,17 @@ export const CampaignMenuItem = (campaign) => {
     //console.log(campaign.name);
     const campaignItem = document.createElement("li");
     campaignItem.classList.add("campaign-menu-item");
-    campaignItem.innerHTML = `${campaign.name}`;
+    const campaignActive = getActiveCampaign();
+    // console.log(campaignActive);
+    let disabled = "";
+    if (campaignActive != null)
+        if (campaign.name == campaignActive.name)
+            disabled = " disabled";
+    campaignItem.innerHTML = `<button ${dataKeys.campaignMenuItemButton}${disabled}>${campaign.name}</button>`;
+    const button = campaignItem.querySelector(`[${dataKeys.campaignMenuItemButton}]`);
+    button.addEventListener(eventKeys.click, () => {
+        setActiceCampaign(campaign.id);
+    });
     return campaignItem;
 }
 

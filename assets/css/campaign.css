@@ -14,8 +14,15 @@ main{
 
 .campaign-menu{
     flex: 0 0 300px;
-    min-height: 200px;
+    min-height: 600px;
     background: #f1f1f1;
+}
+
+.campaign-menu-button{
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    padding: 5px;
 }
 
 .campaign-menu-title{
@@ -50,13 +57,128 @@ main{
     transition: 0.5s;
 }
 
+.campaign-menu-item button{
+    border: none;
+    background: none;
+}
+
+.campaign-menu-item button:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+.campaign-menu-item button:active{
+    margin-left: 2px;
+}
+
+.campaign-menu-item button:disabled{
+    background-color: gray;
+    color: darkblue;
+}
+
 .hidden-menu-item{
-    /* display: none; */
-    font-size: 0em;
+    display: none;
+    height: 0em;
     transition: 0.5s;
 }
 
 .campaign-fill{
     flex: 1;
-    min-height: 200px;
+    min-height: 600px;
+}
+
+.popup-new-campaign{
+    background: none;    
+    position: relative;
+        margin: 10px auto;
+    border: lightgray 1px solid;
+    padding: 10px;
+    width: 600px;
+}
+
+.hidden-popup, .hidden-page{
+    display: none;
+}
+
+.new-campaign-form{    
+    display: flex;
+    flex-direction: column;
+}
+
+.main-textbox{    
+    padding: 0.2em;
+    margin: 0px 0px 10px 0px;
+}
+
+.campaign-save, .campaign-cancel{
+    padding: 0.2em;
+}
+
+.campaign-save{    
+    margin: 0px 0px 10px 0px;
+}
+
+.campaign-header{
+    padding: 10px;
+    background: lightgray;
+}
+
+.campaign-title{
+    display: block;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    padding: 10px 0px;
+    color: darkblue;
+    border: none;
+    background: none;
+    width: 100%;
+}
+
+.campaign-setting-title{
+    display: block;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    padding: 3px 0px;
+    color: darkblue;
+    border: none;
+    background: none;
+    width: 100%;
+}
+
+.error-text {
+    color: darkred;
+}
+
+.campaign-navigation-list{
+    display: flex;
+    flex-direction: row;
+}
+
+.campaign-navigation-item{
+    padding: 5px;
+    flex: 1;
+}
+
+.campaign-navigation-item button{
+    border: none;
+    width: 100%;
+    height: 3.5em;
+    background: none;
+    font-weight: 600;
+}
+
+.campaign-navigation-item button:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+.campaign-navigation-item button:active{
+    margin: 2px 0 0 0;
+}
+
+.campaign-navigation-item button:disabled{
+    background: darkblue;
+    color: lightgray;
 }

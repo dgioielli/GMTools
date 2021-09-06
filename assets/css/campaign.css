@@ -182,3 +182,23 @@ main{
     background: darkblue;
     color: lightgray;
 }
+
+.campaign-card-page{
+    display: flex;
+    flex-direction: row;
+    min-height: 400px;
+}
+
+.campaign-deck-bar{
+    flex: 0 0 300px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    overflow-wrap: break-word;
+    position: sticky;
+    top: 10px;
+    height: 97vh;
+}
+
+.campaign-card-show{
+    flex: 1;
+}

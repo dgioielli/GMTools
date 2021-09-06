@@ -4,6 +4,8 @@ export const dataKeys = {
     campaignPage: "data-campaign-page",
     campaignNameTitle: "data-campaign-title",
     campaignSettingTitle: "data-campaign-setting-title",
+
+    cardPageButtonAll: "data-card-page-button-all",
 }
 
 export const searchKeys = {
@@ -13,4 +15,5 @@ export const searchKeys = {
 
 export const attributeKeys = {
     value: "value",
+    disabled: "disabled",
 }

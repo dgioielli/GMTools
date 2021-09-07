@@ -199,6 +199,61 @@ main{
     height: 97vh;
 }
 
+.card-item{
+    display: block;
+    min-height: 1em;
+    border-width: medium;
+    border-style: solid;
+    border-radius: 5px;
+    text-align: center;
+    font-size: large;
+    padding: 0.2em;
+    margin: 5px auto;
+    width: 95%;
+    background-color: white;
+}
+
+.card-item:hover{
+    background: lightsteelblue;
+}
+
 .campaign-card-show{
     flex: 1;
+}
+
+.card-base-div{
+    border: black 5px solid;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.card-title-input{
+    border: none;
+    border-bottom: lightgray 1px solid;
+    display: block;
+    text-align: center;
+    width: 95%;
+    padding: 5px;
+    font-size: x-large;
+    margin: 0 auto;
+}
+
+.card-type-selector{
+    border: none;
+    border-bottom: lightgray 1px solid;
+    display: block;
+    text-align: center;
+    width: 95%;
+    font-size: medium;
+    margin: 5px auto;
+}
+
+.card-text-block-div{
+    min-height: 1em;
+    font-size: medium;
+}
+
+.card-text-block-div::placeholder{
+    content: "Novo texto";
 }

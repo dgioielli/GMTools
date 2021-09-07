@@ -6,6 +6,8 @@ import { getAllCampaigns } from "../repositories/campaignsRepository.js";
 import { editCampaign, getActiveCampaign } from "../services/campaignServices.js"
 import { getCardPageIndex } from "../services/routerServices.js";
 import { loadCampaignMenu } from "./CampaignMenu.js";
+import { loadCardPage } from "./cardPage.js";
+import { loadDeckBar } from "./deckBar.js";
 
 export const atualizeCampaignPage = () => {
     const campaign = getActiveCampaign();
@@ -18,6 +20,8 @@ export const atualizeCampaignPage = () => {
     buttonPage.setAttribute(attributeKeys.disabled, "");
 
     loadCampaignHeader(campaign);
+    loadDeckBar(campaign);
+    loadCardPage();
 }
 
 const loadCampaignHeader = (campaign) => {

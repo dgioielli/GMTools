@@ -37,7 +37,7 @@ export const CampaignMenuItem = (campaign) => {
     button.addEventListener(eventKeys.click, () => {
         setActiceCampaign(campaign.id);
     });
-    button.addEventListener("auxclick", (event) => {
+    button.addEventListener(eventKeys.auxclick, (event) => {
         if (event.button == 1)
             setActiceCampaign(campaign.id, true);
     });
